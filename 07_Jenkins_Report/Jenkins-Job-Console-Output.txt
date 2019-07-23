@@ -1,0 +1,192 @@
+Started by user Indraraj Majilya
+Running as SYSTEM
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment
+No credentials specified
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/indrabdn/FSE_Final_403231.git # timeout=10
+Fetching upstream changes from https://github.com/indrabdn/FSE_Final_403231.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/indrabdn/FSE_Final_403231.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 40fcd65f0af570b6de2ac0481f9f95e9c9704429 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 40fcd65f0af570b6de2ac0481f9f95e9c9704429
+Commit message: "Web APi project completed"
+ > git.exe rev-list --no-walk 40fcd65f0af570b6de2ac0481f9f95e9c9704429 # timeout=10
+[FSE_Final_Assignment] $ cmd /c call C:\WINDOWS\TEMP\jenkins2099853819170585188.bat
+
+C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment>"C:\Indraraj\FSE_403231\FSE_Final_403231\03_Middle_Tier_Layer\ProjectManager\PerformanceTests\nuget.exe" restore 03_Middle_Tier_Layer\ProjectManager\ProjectManager.sln 
+MSBuild auto-detection: using msbuild version '15.1.548.43366' from 'C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\bin'.
+All packages listed in packages.config are already installed.
+
+C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment>"C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe" 03_Middle_Tier_Layer\ProjectManager\ProjectManager.sln 
+Microsoft (R) Build Engine version 4.7.3056.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+Build started 22-07-2019 13:29:06.
+Project "C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\ProjectManager.sln" on node 1 (default targets).
+ValidateSolutionConfiguration:
+  Building solution configuration "Debug|Any CPU".
+Project "C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\ProjectManager.sln" (1) is building "C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\ProjectManager\ProjectManager.csproj" (2) on node 1 (default targets).
+Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="4.0". For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
+EntityDeployNonEmbeddedResources:
+Skipping target "EntityDeployNonEmbeddedResources" because it has no outputs.
+EntityDeployEmbeddedResources:
+Skipping target "EntityDeployEmbeddedResources" because all output files are up-to-date with respect to the input files.
+ResolveAssemblyReferences:
+  Primary reference "Microsoft.VisualStudio.DebuggerVisualizers, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL".
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Microsoft.VisualStudio.DebuggerVisualizers, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\ProjectManager\ProjectManager.csproj]
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Microsoft.VisualStudio.DebuggerVisualizers.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Microsoft.VisualStudio.DebuggerVisualizers.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Microsoft.VisualStudio.DebuggerVisualizers.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\Microsoft.VisualStudio.DebuggerVisualizers.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\Microsoft.VisualStudio.DebuggerVisualizers.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\Microsoft.VisualStudio.DebuggerVisualizers.exe", but it didn't exist.
+          For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.6.1,AssemblyFoldersEx}".
+          Considered AssemblyFoldersEx locations.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.VisualStudio.DebuggerVisualizers.dll", but its name "Microsoft.VisualStudio.DebuggerVisualizers, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" didn't match.
+          For SearchPath "{AssemblyFolders}".
+          Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\Microsoft.VisualStudio.DebuggerVisualizers.winmd", but it didn't exist.
+          Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\Microsoft.VisualStudio.DebuggerVisualizers.dll", but it didn't exist.
+          Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\Microsoft.VisualStudio.DebuggerVisualizers.exe", but it didn't exist.
+          For SearchPath "{GAC}".
+          Considered "Microsoft.VisualStudio.DebuggerVisualizers, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL", which was not found in the GAC.
+          For SearchPath "{RawFileName}".
+          Considered treating "Microsoft.VisualStudio.DebuggerVisualizers, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" as a file name, but it didn't exist.
+          For SearchPath "bin\".
+          Considered "bin\Microsoft.VisualStudio.DebuggerVisualizers.winmd", but it didn't exist.
+          Considered "bin\Microsoft.VisualStudio.DebuggerVisualizers.dll", but it didn't exist.
+          Considered "bin\Microsoft.VisualStudio.DebuggerVisualizers.exe", but it didn't exist.
+  AssemblyFoldersEx location: "{Registry:Software\Microsoft\.NETFramework,v4.6.1,AssemblyFoldersEx}"
+          C:\Program Files (x86)\Microsoft.NET\Primary Interop Assemblies\
+          C:\Program Files\Reference Assemblies\Microsoft\Workflow Manager\1.0\
+          
+          
+          C:\Program Files\Microsoft SDKs\Azure\.NET SDK\v2.9\bin\plugins\Diagnostics\
+          C:\Program Files\Microsoft SDKs\Azure\.NET SDK\v2.9\ref\Caching\
+          C:\Program Files (x86)\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\Office15\
+          C:\Program Files (x86)\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\Office14\
+          C:\Program Files (x86)\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\Common\
+          C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\ReferenceAssemblies\v4.0\
+          C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Tasks
+          C:\Program Files (x86)\Microsoft SQL Server\110\DTS\PipelineComponents\
+          C:\Program Files (x86)\Microsoft SQL Server\110\DTS\ForEachEnumerators
+          C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Connections\
+          C:\Program Files (x86)\Microsoft SQL Server\110\SDK\Assemblies\
+          C:\Program Files (x86)\Microsoft Visual Studio 10.0\ReportViewer\
+          C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies\
+          C:\Program Files (x86)\Microsoft.NET\Primary Interop Assemblies\
+          C:\Program Files (x86)\Open XML SDK\V2.5\lib
+          C:\Program Files\Reference Assemblies\Microsoft\Microsoft Identity Extensions\1.0\
+          C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\ReferenceAssemblies\v2.0\
+          C:\Program Files\Microsoft SDKs\Azure\.NET SDK\v2.9\ref
+          C:\Program Files (x86)\Microsoft Visual Studio 10.0\ReportViewer\
+          C:\Program Files (x86)\Common Files\Microsoft Shared\MSEnv\\PublicAssemblies
+          C:\Program Files (x86)\Microsoft Chart Controls\Assemblies
+          C:\Program Files\Microsoft SQL Server\110\DTS\Tasks
+          C:\Program Files\Microsoft SQL Server\110\DTS\PipelineComponents\
+          C:\Program Files\Microsoft SQL Server\110\DTS\ForEachEnumerators
+          C:\Program Files\Microsoft SQL Server\110\DTS\Connections\
+          C:\Program Files\Microsoft SDKs\Azure\.NET SDK\v2.9\ref
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+CopyFilesToOutputDirectory:
+  ProjectManager -> C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\ProjectManager\bin\ProjectManager.dll
+Done Building Project "C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\ProjectManager\ProjectManager.csproj" (default targets).
+Project "C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\ProjectManager.sln" (1) is building "C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\ProjectManager.Tests\ProjectManager.Tests.csproj" (3) on node 1 (default targets).
+Project file contains ToolsVersion="12.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="4.0". For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
+Project "C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\ProjectManager.Tests\ProjectManager.Tests.csproj" (3) is building "C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\ProjectManager\ProjectManager.csproj" (2:3) on node 1 (GetNativeManifest target(s)).
+Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="4.0". For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
+Done Building Project "C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\ProjectManager\ProjectManager.csproj" (GetNativeManifest target(s)).
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+_CopyOutOfDateSourceItemsToOutputDirectory:
+Skipping target "_CopyOutOfDateSourceItemsToOutputDirectory" because all output files are up-to-date with respect to the input files.
+_CopyAppConfigFile:
+Skipping target "_CopyAppConfigFile" because all output files are up-to-date with respect to the input files.
+CopyFilesToOutputDirectory:
+  ProjectManager.Tests -> C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\ProjectManager.Tests\bin\Debug\ProjectManager.Tests.dll
+Done Building Project "C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\ProjectManager.Tests\ProjectManager.Tests.csproj" (default targets).
+Project "C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\ProjectManager.sln" (1) is building "C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\PerformanceTests\PerformanceTests.csproj" (4) on node 1 (default targets).
+Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="4.0". For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3247: Found conflicts between different versions of the same dependent assembly. [C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\PerformanceTests\PerformanceTests.csproj]
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+_CopyOutOfDateSourceItemsToOutputDirectory:
+Skipping target "_CopyOutOfDateSourceItemsToOutputDirectory" because all output files are up-to-date with respect to the input files.
+_CopyAppConfigFile:
+Skipping target "_CopyAppConfigFile" because all output files are up-to-date with respect to the input files.
+CopyFilesToOutputDirectory:
+  PerformanceTests -> C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\PerformanceTests\bin\Debug\PerformanceTests.dll
+Done Building Project "C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\PerformanceTests\PerformanceTests.csproj" (default targets).
+Done Building Project "C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\ProjectManager.sln" (default targets).
+
+Build succeeded.
+
+"C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\ProjectManager.sln" (default target) (1) ->
+"C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\ProjectManager\ProjectManager.csproj" (default target) (2) ->
+(ResolveAssemblyReferences target) -> 
+  C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Microsoft.VisualStudio.DebuggerVisualizers, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\ProjectManager\ProjectManager.csproj]
+
+
+"C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\ProjectManager.sln" (default target) (1) ->
+"C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\PerformanceTests\PerformanceTests.csproj" (default target) (4) ->
+  C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3247: Found conflicts between different versions of the same dependent assembly. [C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\PerformanceTests\PerformanceTests.csproj]
+
+    2 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.63
+
+C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment>exit 0 
+[FSE_Final_Assignment] $ cmd /c call C:\WINDOWS\TEMP\jenkins6293695629462534774.bat
+
+C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment>CD "C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\packages\NUnit.ConsoleRunner.3.10.0\tools" 
+
+C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\packages\NUnit.ConsoleRunner.3.10.0\tools>start nunit3-console.exe" 
+
+C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\packages\NUnit.ConsoleRunner.3.10.0\tools>nunit3-console.exe ..\..\..\ProjectManager.Tests\bin\Debug\ProjectManager.Tests.dll --result=nunit-result.xml 
+NUnit Console Runner 3.10.0 (.NET 2.0)
+Copyright (c) 2019 Charlie Poole, Rob Prouse
+22 July 2019 13:29:08
+
+Runtime Environment
+   OS Version: Microsoft Windows NT 10.0.17134.0
+  CLR Version: 4.0.30319.42000
+
+Test Files
+    ..\..\..\ProjectManager.Tests\bin\Debug\ProjectManager.Tests.dll
+
+
+Run Settings
+    DisposeRunners: True
+    WorkDirectory: C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\packages\NUnit.ConsoleRunner.3.10.0\tools
+    ImageRuntimeVersion: 4.0.30319
+    ImageTargetFrameworkName: .NETFramework,Version=v4.6.1
+    ImageRequiresX86: False
+    ImageRequiresDefaultAppDomainAssemblyResolver: False
+    NumberOfTestWorkers: 3
+
+Test Run Summary
+  Overall result: Passed
+  Test Count: 52, Passed: 52, Failed: 0, Warnings: 0, Inconclusive: 0, Skipped: 0
+  Start time: 2019-07-22 07:59:09Z
+    End time: 2019-07-22 07:59:14Z
+    Duration: 5.207 seconds
+
+Results (nunit3) saved as nunit-result.xml
+
+C:\Program Files (x86)\Jenkins\workspace\FSE_Final_Assignment\03_Middle_Tier_Layer\ProjectManager\packages\NUnit.ConsoleRunner.3.10.0\tools>exit 0 
+Recording NUnit tests results
+Finished: SUCCESS
